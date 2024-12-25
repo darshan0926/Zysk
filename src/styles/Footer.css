@@ -1,0 +1,169 @@
+/* General Footer Styling */
+.footer {
+  background-color: #f9fafb;
+  color: #101828;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer Container */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer Top Section */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Logo Section */
+.footer-logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-main-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #101828;
+}
+
+/* Footer Links */
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.footer-column h4 {
+  font-size: 0.875rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+  color: #475467;
+}
+
+/* Footer Links Styling */
+.footer-column p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #667085;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-column p:hover {
+  color: #6a0dad;
+  animation: blink 0.8s infinite alternate;
+}
+
+/* Blink Animation */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Solutions Button Styling */
+.footer-solutions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-new-btn {
+  background-color: #e0f9e6;
+  color: #28a745; /* Green color for text */
+  border: 1px solid #28a745;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.6rem;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-new-btn:hover {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e4e7ec;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+.footer-bottom .footer-logo-section {
+  margin: 0;
+}
+
+.footer-bottom p {
+  font-size: 0.875rem;
+  color: #667085;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
+    gap: 1.5rem; /* Adequate spacing between columns */
+  }
+
+  .footer-column {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-main-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-logo {
+    font-size: 1.2rem;
+  }
+}

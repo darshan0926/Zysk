@@ -1,0 +1,85 @@
+/* General Section Styling */
+.testimonials {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9fafb;
+  }
+  
+  /* Testimonial Card */
+  .testimonial__card {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Avatar Styling */
+.testimonial__avatar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .testimonial__avatar img {
+    width: 100%;
+    height: 100%;
+    max-width: 120px;  /* Adjust the max-width according to your design preference */
+    max-height: 120px; /* Ensure the image does not exceed this height */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image scales and maintains its aspect ratio */
+    border: 2px solid #e0e0e0;
+  }
+  
+  /* Heading Text */
+  .testimonial__heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #101828;
+    margin-bottom: 15px;
+  }
+  
+  /* Supporting Text */
+  .testimonial__text {
+    font-size: 1rem;
+    color: #475467;
+    margin-bottom: 25px;
+    line-height: 1.5;
+  }
+  
+  /* Button Styling */
+  .testimonial__btn {
+    display: inline-block;
+    background-color: #6941c6;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .testimonial__btn:hover {
+    background-color: #5a3ab6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .testimonial__heading {
+      font-size: 1.5rem;
+    }
+  
+    .testimonial__text {
+      font-size: 0.9rem;
+    }
+  
+    .testimonial__btn {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  }
+  

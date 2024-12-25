@@ -1,0 +1,194 @@
+/* General Styling */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: #f9fafc;
+}
+
+/* Badge and Highlight Container */
+.hero__badge-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* New Feature Badge */
+.hero__badge {
+  background-color: #eef2ff;
+  border: 1px solid #d6dbe8;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6941c6;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.hero__badge:hover {
+  box-shadow: 0 4px 8px rgba(105, 65, 198, 0.2);
+}
+
+/* Highlight Box */
+.hero__highlight-box {
+  background-color: #e9e6f1;
+  border: 0px solid #6941c6;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6941c6;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.hero__highlight-box:hover {
+  box-shadow: 0 4px 8px rgba(217, 119, 6, 0.2);
+}
+
+.hero__highlight-link {
+  text-decoration: none;
+  color: #6941c6;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.hero__highlight-link:hover {
+  color: #6941c6;
+}
+
+/* Content Styling */
+.hero__content {
+  max-width: 900px;
+  margin-bottom: 2rem;
+}
+
+.hero__content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #101828;
+}
+
+.hero__content p {
+  font-size: 1.1rem;
+  color: #475467;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* Button Styling */
+.hero__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero__btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.hero__btn.demo {
+  background-color: #6a0dad;
+  color: white;
+}
+
+.hero__btn.demo:hover {
+  background-color: #5a008c;
+}
+
+.hero__btn.signup {
+  background-color: #e4e7ec;
+  color: #101828;
+}
+
+.hero__btn.signup:hover {
+  background-color: #cfd4db;
+}
+
+.hero__btn-icon {
+  font-size: 1.2rem;
+}
+
+/* Image Styling */
+.hero__image {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.hero__image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.hero__image .primary-image {
+  display: block;
+}
+
+.hero__image .secondary-image {
+  display: none; /* Hide by default */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero__badge-container {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .hero__badge,
+  .hero__highlight-box {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    text-align: center;
+  }
+
+  .hero__content h1 {
+    font-size: 2rem;
+  }
+
+  .hero__content p {
+    font-size: 1rem;
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .hero__btn {
+    width: 100%;
+  }
+
+  .hero__image .primary-image {
+    display: none; /* Hide the primary image in mobile view */
+  }
+
+  .hero__image .secondary-image {
+    display: block; /* Show the secondary image in mobile view */
+  }
+}

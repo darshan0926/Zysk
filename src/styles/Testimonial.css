@@ -1,0 +1,68 @@
+.testimonial-section {
+  background-color: #f9f9f9;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+/* Header Section - Logo and Company Name */
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem; /* Space between the logo and the testimonial */
+}
+
+.testimonial-logo {
+  width: 50px;  /* Adjust the logo size */
+  height: 50px;
+  object-fit: contain;
+  margin-right: 10px; /* Space between logo and company name */
+}
+
+.testimonial-company {
+  font-size: 2rem;  /* Larger font size for "Sisyphus" */
+  font-weight: bold;
+  color: #101828;
+}
+
+/* Testimonial Text */
+.testimonial-text {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  max-width: 800px; /* Optional: Set a max-width to prevent the text from being too wide */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Author Details (Avatar, Name, and Role) */
+.testimonial-author-details {
+  display: flex;
+  flex-direction: column;  /* Stack the avatar, name, and role vertically */
+  justify-content: center;
+  align-items: center;  /* Center horizontally */
+  margin-top: 2rem; /* Space between testimonial and author details */
+}
+
+.testimonial-author-avatar {
+  width: 80px;  /* Larger avatar size */
+  height: 80px;
+  border-radius: 50%;  /* Circular avatar */
+  object-fit: cover;
+  margin-bottom: 15px;  /* Space between avatar and name/role */
+}
+
+.testimonial-author-info {
+  text-align: center;  /* Ensure the text is centered below the avatar */
+}
+
+.testimonial-author {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #101828;
+}
+
+.testimonial-role {
+  font-size: 1rem;
+  color: #555;
+}
